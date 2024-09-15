@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://aaryaveerkrishna23.github.io/advanced_rag/",
+  "homepage": "https://aaryaveerkrishna23.github.io/portfolio/",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
