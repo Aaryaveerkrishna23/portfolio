@@ -28,7 +28,7 @@ const homeConfig = {
         {
             id: "work-1",
             title: "Data Scientist",
-            company: "Reliance JIO infocomm Limited",
+            company: "Reliance JIO infocomm Limited (ranked at No.86 in the 2024 Fortune's Global 500 list.",
             description: "Worked in the domain of LLMOps, handling various use cases under the Jio Analytics team." +
                 " Experienced in Generative AI and enterprise RAG, with use cases such as Wiki, HR, and DevOps chatbots.",
             date: "2023",
