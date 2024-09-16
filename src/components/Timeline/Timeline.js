@@ -49,7 +49,7 @@ const CustomTimeline = (props) => {
                                 py: '12px',
                                 px: isMobile ? 2 : 2,
                                 width: isMobile ? 'calc(100% - 60px)' : '100%', // Increase width on mobile
-                                marginLeft: isMobile ? '60px' : '0px', // Adjust margin for mobile
+                                marginLeft: isMobile ? '30px' : '0px', // Adjust margin for mobile
                             }}
                             className="MuiTimelineContent-root"
                         >

@@ -14,14 +14,13 @@ const homeConfig = {
     titles: [
         "A Data Scientist",
         "A Generative AI Specialist",
-        "An Open Source Contributor",
         "An Indian"
     ],
     about: {
         start: "I've been working as a data scientist in JIO for over a year on generative AI field use cases." +
             "I'm excited by learning new things, contributing to the data science community," +
             " and spreading the word of data!",
-        exit: "I'm fluent at Python,Gen-AI, SQL databases, BI tools, and more, " +
+        exit: "I'm fluent at Python,Gen-AI, SQL databases and more, " +
             "with a deep interest in enterprise RAG "
     },
     workTimeline: [
@@ -37,9 +36,9 @@ const homeConfig = {
         },
         {
             id: "work-0",
-            title: "B-tech",
-            company: "KJ Somaiya Institute of technology.",
-            description: "Scored 9.3 cgpa in Electronics and telecommunication Branch",
+            title: "Bachelor of Technology",
+            company: "KJ Somaiya Institute of technology , Mumbai.",
+            description: "Scored 9.3 cgpa in the Electronics and telecommunication Branch",
             date: "2019-2023",
             icon: <BsClipboardData/>,
             

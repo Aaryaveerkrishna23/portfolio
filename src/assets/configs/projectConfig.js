@@ -22,7 +22,7 @@ const projectConfig = [
             
         ],
         image: portfolio,
-        description: "Enterprise level RAG enabled with semantic caching , prompt router and langfuse for observabiltity.",
+        description: "Enterprise level RAG consisting of prompt router for handling complex queries",
         target: "_blank"
     },
     {
