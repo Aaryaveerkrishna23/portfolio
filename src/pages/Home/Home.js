@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Box, Typography } from '@mui/material';
+import { Container, Grid2, Box, Typography } from '@mui/material';
 import DynamicTyping from '../../components/DynamicTyping';
 import About from '../../components/About';
 import Timeline from '../../components/Timeline/Timeline';
