@@ -1,22 +1,37 @@
 import React from 'react';
-import { Paper, Typography, Box } from '@mui/material';
+import { Paper, Typography, Box, useMediaQuery } from '@mui/material';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent, TimelineOppositeContent } from '@mui/lab';
 import Tags from '../Tags/Tags';
 
 const CustomTimeline = (props) => {
     const { items } = props || {};
 
+    // Define a breakpoint for mobile devices
+    const isMobile = useMediaQuery('(max-width:600px)');
+
     return (
-        <Timeline position="alternate">
+        <Timeline position={isMobile ? "right" : "alternate"}>
             {items.map((item) => {
                 const { id, date, icon, title, company, description, tags } = item || {};
                 return (
                     <TimelineItem key={id}>
-                        <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="textSecondary">
-                            {date}
-                        </TimelineOppositeContent>
+                        {/* Conditionally render TimelineOppositeContent based on mobile state */}
+                        {!isMobile && (
+                            <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="textSecondary">
+                                {date}
+                            </TimelineOppositeContent>
+                        )}
                         <TimelineSeparator>
-                            <TimelineDot sx={{ backgroundColor: '#263238', width: 48, height: 48, border: '2px solid white', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            <TimelineDot
+                                sx={{
+                                    backgroundColor: '#263238',
+                                    width: 48,
+                                    height: 48,
+                                    border: '2px solid white',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center'
+                                }}>
                                 <Box sx={{ fontSize: '24px', color: '#FFFFFF' }}>
                                     {icon}
                                 </Box>
@@ -36,13 +51,34 @@ const CustomTimeline = (props) => {
                                         transform: 'scale(1.03)',
                                     }
                                 }}>
-                                <Typography variant="h5" component="h1" sx={{ color: '#263238', textAlign: 'center', mb: 1, fontFamily: 'Roboto, sans-serif', fontWeight: 600 }}>
+                                <Typography
+                                    variant="h5"
+                                    component="h1"
+                                    sx={{
+                                        color: '#263238',
+                                        textAlign: 'center',
+                                        mb: 1,
+                                        fontFamily: 'Roboto, sans-serif',
+                                        fontWeight: 600
+                                    }}>
                                     {title}
                                 </Typography>
-                                <Typography variant="subtitle2" sx={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', color: '#757575' }}>
+                                <Typography
+                                    variant="subtitle2"
+                                    sx={{
+                                        textAlign: 'center',
+                                        fontFamily: 'Open Sans, sans-serif',
+                                        color: '#757575'
+                                    }}>
                                     {company}
                                 </Typography>
-                                <Typography variant="body1" sx={{ mb: 2, fontFamily: 'Open Sans, sans-serif', color: '#424242' }}>
+                                <Typography
+                                    variant="body1"
+                                    sx={{
+                                        mb: 2,
+                                        fontFamily: 'Open Sans, sans-serif',
+                                        color: '#424242'
+                                    }}>
                                     {description}
                                 </Typography>
                                 <Tags id={id} tags={tags} />
