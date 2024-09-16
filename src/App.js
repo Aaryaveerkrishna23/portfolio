@@ -18,7 +18,7 @@ if (typeof process.env.REACT_APP_TRACKING_ID !== 'undefined') {
 function App() {
     return (
         <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-            <Router basename="/portfolio">
+            <Router>
                 <NavBar />
                 <Container sx={{ flex: 1, py: 3 }}>
                     <Routes>
