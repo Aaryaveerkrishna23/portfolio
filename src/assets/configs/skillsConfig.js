@@ -121,13 +121,7 @@ const skillsConfig = {
             icon: <SiApachekafka size={50}/>,
             text: "Kafka"
         }
-        ,
-        {
-            id: "skills-15",
-            className: "skill-icon",
-            icon: <SiPowerbi size={50}/>,
-            text: "Power BI"
-        }
+        
     ]
 }
 

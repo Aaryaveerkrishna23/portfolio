@@ -5,8 +5,9 @@ html, body {
     font-family: "Raleway", serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #d4d7d9; /* Light grey background for a clean, minimalist look */
-    color: #3d4549; /* Dark grey text for better visibility */
+    background-color:   
+ #e5e3e3; /* Light grey background for a clean, minimalist look */
+    color: #263238; /* Dark grey text for better visibility */
     display: flex;
     flex-direction: column;
 }
@@ -42,30 +43,11 @@ html, body {
     color: #757575; /* Light grey color for typewriter text */
 }
 
-/* Responsive Adjustments */
-@media screen and (max-width: 499px) {
-    html {
-        font-size: 0.8em;
-    }
-
-    .heading {
-        padding: 2rem 0;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-
-    .Typewriter {
-        font-size: 0.8rem;
-        margin-bottom: 2rem;
-    }
-}
-
 /* Links */
 a {
     color: #1e88e5; /* Subtle blue color for links */
     text-decoration: none;
 }
-
 
 /* Button Styles */
 button {
@@ -80,4 +62,57 @@ button {
 
 button:hover {
     background-color: #1e88e5; /* Blue background on hover */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 999px) {
+    html {
+        font-size: 0.9em;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        padding: 1.5rem 0;
+    }
+
+    .Typewriter {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-card {
+        width: 95%;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    html {
+        font-size: 0.8em;
+    }
+
+    .heading {
+        font-size: 1.25rem;
+        padding: 1rem 0;
+    }
+
+    .Typewriter {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-card {
+        width: 100%;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
 }

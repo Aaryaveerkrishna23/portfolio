@@ -3,7 +3,7 @@ import { Chip, Box } from '@mui/material';
 
 const Tags = (props) => {
   const { tags, id } = props || {};
-  
+
   return (
     <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, marginTop: '0.5rem', marginBottom: '0.5rem' }}>
       {tags && tags.map((tag, index) => (
@@ -13,10 +13,10 @@ const Tags = (props) => {
           color="default"
           size="small"
           sx={{
-            fontSize: '11px',
-            padding: '5px 8px',
-            margin: '0 6px 6px 2px',
-            letterSpacing: '1px',
+            fontSize: '12px',
+            padding: '4px 8px',
+            margin: '2px', // Adjust margin to ensure spacing between tags
+            letterSpacing: '0.5px',
             fontWeight: 'lighter',
             backgroundColor: '#f5f5f5', // Light background color for tags
             border: '1px solid #ccc', // Subtle border

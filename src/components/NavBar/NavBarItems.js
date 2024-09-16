@@ -7,7 +7,15 @@ const NavBarItems = () => {
     const location = useLocation();
 
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'flex-start', gap: 2 }}>
+        <Box sx={{ 
+            display: 'flex', 
+            justifyContent: 'flex-start', 
+            gap: 2,
+            flexDirection: 'row', // Ensure items are in a row for horizontal scrolling
+            '@media (min-width: 600px)': { // For larger screens, align items normally
+                flexDirection: 'row',
+            },
+        }}>
             {menuConfig.sidebarData.map((item) => (
                 <ListItem
                     button
