@@ -57,7 +57,7 @@ const CustomTimeline = (props) => {
     elevation={2}
     sx={{
         p: isMobile ? 3 : 2,
-        width: isMobile ? '200px' : 'auto', // Set width to 200px for mobile, auto for desktop
+        width: isMobile ? '180px' : 'auto', // Set width to 200px for mobile, auto for desktop
         background: 'linear-gradient(135deg, #f5f5f5 30%, #e8e8e8 90%)',
         borderRadius: '12px',
         boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
