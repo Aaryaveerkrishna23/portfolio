@@ -5,7 +5,20 @@ const Tags = (props) => {
   const { tags, id } = props || {};
 
   return (
-    <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, marginTop: '0.5rem', marginBottom: '0.5rem' }}>
+    <Box
+      sx={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: 1,
+        marginTop: '0.5rem',
+        marginBottom: '0.5rem',
+        justifyContent: {
+          xs: 'space-around', // For mobile view
+          sm: 'flex-start' // For larger screens
+        },
+        alignItems: 'center',
+      }}
+    >
       {tags && tags.map((tag, index) => (
         <Chip
           key={id + index}

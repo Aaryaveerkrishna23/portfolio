@@ -12,7 +12,7 @@ const CustomTimeline = (props) => {
 
     return (
         <Timeline
-            position={isMobile ? "left" : "alternate"} // Change to left for mobile
+            position={isMobile ? "right" : "alternate"} // Change to left for mobile
             sx={{ padding: 0 }}
         >
             {items.map((item) => {
@@ -30,7 +30,7 @@ const CustomTimeline = (props) => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            marginLeft: isMobile ? '20px' : '0px', // Shift the dot further to the right for mobile view
+            marginLeft: isMobile ? '-30px' : '0px', // Shift the dot further to the right for mobile view
         }}
     >
         <Box sx={{ fontSize: '24px', color: '#FFFFFF' }}>
@@ -40,7 +40,7 @@ const CustomTimeline = (props) => {
     <TimelineConnector 
         sx={{ 
             backgroundColor: '#263238', 
-            marginLeft: isMobile ? '20px' : '0px' // Shift the line to the right for mobile view 
+            marginLeft: isMobile ? '-30px' : '0px' // Shift the line to the right for mobile view 
         }} 
     />
 </TimelineSeparator>
@@ -49,7 +49,7 @@ const CustomTimeline = (props) => {
                                 py: '12px',
                                 px: isMobile ? 2 : 2,
                                 width: isMobile ? 'calc(100% - 60px)' : '100%', // Increase width on mobile
-                                marginLeft: isMobile ? '30px' : '0px', // Adjust margin for mobile
+                                marginLeft: isMobile ? '-10px' : '0px', // Adjust margin for mobile
                             }}
                             className="MuiTimelineContent-root"
                         >
@@ -94,6 +94,7 @@ const CustomTimeline = (props) => {
                                 <Typography
                                     variant="body1"
                                     sx={{
+                                        textAlign: 'center',
                                         mb: 2,
                                         fontFamily: 'Open Sans, sans-serif',
                                         color: '#424242'
