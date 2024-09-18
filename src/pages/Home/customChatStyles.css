@@ -45,6 +45,9 @@
     .rcw-conversation-container {
         width: 50vw; /* Make the chat window 90% of the screen width on mobile */
         height: 60vh; /* Make the chat window 60% of the screen height on mobile */
-        bottom: 10px; /* Slightly move it up to ensure it's not too close to the bottom */
+        bottom: -150px;
+        margin-left: auto;
+        margin-right : auto;
+     /* Slightly move it up to ensure it's not too close to the bottom */
     }
 }
