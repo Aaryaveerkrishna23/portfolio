@@ -41,15 +41,16 @@
     color: rgb(106, 101, 101);
   }
   /* Adjust chat widget size for mobile devices */
-@media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     .rcw-conversation-container {
-        /* width: 50vw; Make the chat window 90% of the screen width on mobile */
-        height: 60vh; /* Make the chat window 60% of the screen height on mobile */
-        bottom: -150px;
+        width: 50vw;
+         /* Make the chat window 70% of the screen width on mobile */
+        height: 30vh; /* Make the chat window 40% of the screen height on mobile */
+        bottom: -400px; /* Position the chat window 10px from the bottom */
         margin-left: auto;
-        margin-right : auto;
+        margin-right: auto;
         display: flex;
-        border-top: 40px;
-     /* Slightly move it up to ensure it's not too close to the bottom */
+        border-radius: 10px; /* Rounded corners for better aesthetics */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
     }
 }
