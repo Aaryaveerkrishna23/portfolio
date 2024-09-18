@@ -91,13 +91,14 @@ const Home = () => {
                         {/* Add Resume Button */}
                         <Box sx={{ mt: 4 }}>
                             <Button 
-                                variant="contained" 
-                                color="primary"
-                                href="/resume.pdf" // Link to the resume file
-                                download // This attribute will force the browser to download the file
-                            >
-                                Download My Resume
-                            </Button>
+                               variant="contained" 
+                               color="primary"
+                               href="https://github.com/Aaryaveerkrishna23/portfolio/raw/main/public/resume.pdf" 
+                               target="_blank"
+                               download
+                           >
+                               Download My Resume
+                           </Button>
                         </Box>
                     </Grid>
                 </Grid>
