@@ -1,0 +1,42 @@
+/* Use the theme primary color for the user chat bubbles */
+.rcw-conversation-container .rcw-message .rcw-client {
+    background-color: var(--primary-color); /* Replace this with your theme color */
+    color: rgb(7, 6, 6);
+}
+
+/* Use the theme secondary color for the bot messages */
+.rcw-conversation-container .rcw-message .rcw-response {
+    background-color: rgb(209, 215, 218); /* Replace this with your theme color */
+    color: rgb(1, 1, 1);
+}
+
+/* Apply the theme's primary color for the header */
+.rcw-header {
+    background-color: rgb(32, 106, 124); /* Replace with your site's primary color */
+    color: white;
+}
+
+/* Change the chat widget icon color */
+.rcw-launcher {
+    background-color:  rgb(15, 93, 124); /* Match with your primary color */
+    color: rgb(83, 51, 51); /* You can change this to match your color scheme */
+}
+
+/* Customize the input area using the theme */
+.rcw-sender {
+    background-color:  rgb(232, 236, 237); /* Adjust to match input background of your site */
+}
+
+/* Customize send button */
+.rcw-sender button {
+    background-color: var(--primary-color); /* Match with your site's button color */
+    color: rgb(0, 0, 0);
+}
+.rcw-conversation-container > .rcw-header {
+    background-color: rgb(42, 132, 162);
+  }
+  
+  .rcw-message > .rcw-response {
+    background-color: black;
+    color: rgb(106, 101, 101);
+  }

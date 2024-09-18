@@ -25,22 +25,36 @@ const homeConfig = {
     },
     workTimeline: [
         {
-            id: "work-1",
+            id: "work-2",
             title: "Data Scientist",
-            company: "Reliance JIO infocomm Limited (ranked at No.86 in the 2024 Fortune's Global 500 list)",
-            description: "Worked in the domain of LLMOps, handling various use cases under the Jio Analytics team." +
-                " Experienced in Generative AI and enterprise RAG, with use cases such as Wiki, HR, and DevOps chatbots.",
+            company: "Reliance JIO platform's limited (India's biggest internet and tech giant)",
+            description: "Worked in the domain of LLMOps, handling various use cases under the JIO Analytics team." ,
             date: "2023",
             icon: <GiCommercialAirplane/>,
             tags: ["genai", "python", "llmops", "dspy", "ray" ,"rag", "azure","sql","langchain" , "docker"]
         },
         {
+            id: "work-1",
+            title: "Internship Program -IGNITE 2023",
+            company: "LTIMindtree",
+            description: `Skills Gained:
+ Understanding of the Software Development Life Cycle (SDLC).
+
+ Hands-on project work and assignments.
+`,
+            date: "2023",
+            icon: <DiCodeigniter/>,
+            tags: ["Python", "Java", "HTML", "CSS", "JavaScript" ,"SQL", "SQL","MongoDB"]
+            
+        },
+        {
             id: "work-0",
             title: "Bachelor of Technology",
             company: "KJ Somaiya Institute of technology , Mumbai.",
-            description: "Scored 9.3 cgpa in the Electronics and telecommunication Branch",
+            description: "Scored 9.3 cgpa in the Electronics and telecommunication Branch.",
             date: "2019-2023",
             icon: <BsClipboardData/>,
+            tags: ["Python", "Machine Learning", "Deep learning", "Image processing" ,"Computer networks", "Linux"]
             
         }
     ]

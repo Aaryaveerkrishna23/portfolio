@@ -15,6 +15,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.7",
     "react": "^18.3.1",
+    "react-chat-widget": "^3.1.4",
     "react-chatbot-kit": "^2.2.2",
     "react-dom": "^18.3.1",
     "react-ga": "^3.3.1",
