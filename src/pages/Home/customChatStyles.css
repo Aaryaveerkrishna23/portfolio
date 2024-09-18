@@ -49,6 +49,7 @@
         margin-left: auto;
         margin-right : auto;
         display: flex;
+        border-top: 40px;
      /* Slightly move it up to ensure it's not too close to the bottom */
     }
 }
