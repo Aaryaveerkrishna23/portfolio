@@ -44,7 +44,7 @@ const homeConfig = {
 `,
             date: "2023",
             icon: <DiCodeigniter/>,
-            tags: ["Python", "Java", "HTML", "CSS", "JavaScript" ,"SQL", "SQL","MongoDB"]
+            tags: ["Python", "Java", "HTML", "CSS", "JavaScript" ,"SQL","MongoDB"]
             
         },
         {
