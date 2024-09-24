@@ -12,7 +12,7 @@ import logo from './logo.png'; // Sample logo for the avatar
 
 const Home = () => {
     const isMobile = useMediaQuery('(max-width:600px)');
-    const [context, setContext] = useState(''); // Store the conversation history as a string
+    const [chatHistory, setChatHistory] = useState([]); // Store the conversation history as an array
     const [loading, setLoading] = useState(false);
 
     // Send a welcome message when the chat widget is first loaded
@@ -24,20 +24,35 @@ const Home = () => {
     const handleNewUserMessage = async (newMessage) => {
         if (!newMessage.trim()) return; // Prevent empty submissions
 
-        const updatedContext = `${context}${context ? ' ' : ''}${newMessage}`;
-        setContext(updatedContext); // Update context with the new message
+        // Add new user message to chat history
+        const updatedChatHistory = [...chatHistory, { user: newMessage, bot: null }];
+        setChatHistory(updatedChatHistory);
 
         setLoading(true);  // Show loading indicator
 
         try {
-            // Send the query along with the updated context
+            // Prepare formatted context (user and bot conversations)
+            const formattedContext = updatedChatHistory
+                .map((entry) => `User: ${entry.user} | Bot: ${entry.bot || 'Pending'}`)
+                .join(' || ');
+
+            // Prepare the payload text with query and context
+            const textPayload = `New Query: ${newMessage},\nUser's chat Message History:\n` + 
+    chatHistory
+        .map((entry, index) => `#${index + 1}\nUser: ${entry.user}\nBot: ${entry.bot || 'Pending'}`)
+        .join('\n\n');
+
+            // Debugging: log the full text being sent to the server
+            console.log("Text being sent:", textPayload);
+
+            // Send the query along with the updated context to the API
             const res = await fetch('https://vercel-lyart-gamma.vercel.app/api/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    text: `query: ${newMessage}, context: ${context}`,  // Send the current query with context
+                    text: textPayload  // Send the current query with context
                 }),
             });
 
@@ -48,7 +63,11 @@ const Home = () => {
             // Check if the response has text property
             if (rawResponse && rawResponse.text) {
                 addResponseMessage(rawResponse.text); // Display the bot's response
-                setContext(`${updatedContext} ${rawResponse.text}`);  // Append the bot's response to the context
+
+                // Update chat history with bot response
+                const finalChatHistory = [...updatedChatHistory];
+                finalChatHistory[finalChatHistory.length - 1].bot = rawResponse.text;  // Add bot response to the latest chat
+                setChatHistory(finalChatHistory);  // Update chat history
             } else {
                 addResponseMessage('Error: Invalid response from server.');
             }
