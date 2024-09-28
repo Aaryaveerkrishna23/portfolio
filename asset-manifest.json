@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a5d6ed56.css",
-    "main.js": "/portfolio/static/js/main.ea26bcd5.js",
+    "main.css": "/portfolio/static/css/main.ca01313e.css",
+    "main.js": "/portfolio/static/js/main.62941ddd.js",
     "static/media/rag_image.webp": "/portfolio/static/media/rag_image.055d888b399faa4eefba.webp",
     "static/media/sklearn_genetic_opt.png": "/portfolio/static/media/sklearn_genetic_opt.15b892adf6368a965618.png",
     "static/media/kafkaml.png": "/portfolio/static/media/kafkaml.5ee10c15934deddbebe6.png",
     "static/media/fastapi_sklearn.png": "/portfolio/static/media/fastapi_sklearn.0bfaec4cff582eb26751.png",
     "static/media/logo.png": "/portfolio/static/media/logo.1ad62897b3f1288de5ad.png",
     "index.html": "/portfolio/index.html",
-    "main.a5d6ed56.css.map": "/portfolio/static/css/main.a5d6ed56.css.map",
-    "main.ea26bcd5.js.map": "/portfolio/static/js/main.ea26bcd5.js.map"
+    "main.ca01313e.css.map": "/portfolio/static/css/main.ca01313e.css.map",
+    "main.62941ddd.js.map": "/portfolio/static/js/main.62941ddd.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5d6ed56.css",
-    "static/js/main.ea26bcd5.js"
+    "static/css/main.ca01313e.css",
+    "static/js/main.62941ddd.js"
   ]
 }
