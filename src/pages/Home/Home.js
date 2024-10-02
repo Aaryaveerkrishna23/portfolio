@@ -7,22 +7,39 @@ import homeConfig from '../../assets/configs/homeConfig';
 import { Widget, addResponseMessage } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
 import './customChatStyles.css';  // Import the custom styles
-
 import logo from './logo.png'; // Sample logo for the avatar
+
+import { ref, set } from 'firebase/database';
+import { database } from './firebase.js';  // Adjust the path based on your setup
+import { v4 as uuidv4 } from 'uuid';  // For generating session IDs
+
+
 
 const Home = () => {
     const isMobile = useMediaQuery('(max-width:600px)');
-    const [chatHistory, setChatHistory] = useState([]); // Store the conversation history as an array
-    const [loading, setLoading] = useState(false);
+    const [sessionId] = useState(uuidv4());  // Generate a unique session ID per user session
+    const [chatHistory, setChatHistory] = useState([]);  // Store the conversation history as an array
+    const [loading, setLoading] = useState(false);  // Loading state to show typing indicator
 
     // Send a welcome message when the chat widget is first loaded
     useEffect(() => {
         addResponseMessage('Hi , You are talking to me!');
     }, []);
 
+    // Function to log messages to Firebase
+    const logToFirebase = (userMessage, botResponse) => {
+        const timestamp = Date.now();
+        const sessionRef = ref(database, `chatSessions/${sessionId}/${timestamp}`);
+        set(sessionRef, {
+            userMessage,
+            botResponse,
+            timestamp
+        });
+    };
+
     // Handle message submission and send the query to your API
     const handleNewUserMessage = async (newMessage) => {
-        if (!newMessage.trim()) return; // Prevent empty submissions
+        if (!newMessage.trim()) return;  // Prevent empty submissions
 
         // Add new user message to chat history
         const updatedChatHistory = [...chatHistory, { user: newMessage, bot: null }];
@@ -38,9 +55,9 @@ const Home = () => {
 
             // Prepare the payload text with query and context
             const textPayload = `New Query: ${newMessage},\nUser's chat Message History:\n` + 
-    chatHistory
-        .map((entry, index) => `#${index + 1}\nUser: ${entry.user}\nBot: ${entry.bot || 'Pending'}`)
-        .join('\n\n');
+                chatHistory
+                    .map((entry, index) => `#${index + 1}\nUser: ${entry.user}\nBot: ${entry.bot || 'Pending'}`)
+                    .join('\n\n');
 
             // Debugging: log the full text being sent to the server
             console.log("Text being sent:", textPayload);
@@ -62,12 +79,15 @@ const Home = () => {
 
             // Check if the response has text property
             if (rawResponse && rawResponse.text) {
-                addResponseMessage(rawResponse.text); // Display the bot's response
+                addResponseMessage(rawResponse.text);  // Display the bot's response
 
                 // Update chat history with bot response
                 const finalChatHistory = [...updatedChatHistory];
                 finalChatHistory[finalChatHistory.length - 1].bot = rawResponse.text;  // Add bot response to the latest chat
                 setChatHistory(finalChatHistory);  // Update chat history
+
+                // Log the conversation to Firebase
+                logToFirebase(newMessage, rawResponse.text);
             } else {
                 addResponseMessage('Error: Invalid response from server.');
             }
@@ -122,7 +142,7 @@ const Home = () => {
                     </Grid>
                 </Grid>
             </Container>
-
+            
             <Container
                 maxWidth="xl"
                 className="resume-content"
@@ -146,10 +166,12 @@ const Home = () => {
             {/* Chat Widget */}
             <Widget
                 handleNewUserMessage={handleNewUserMessage}
-                profileAvatar={logo}
+                profileAvatar="https://avatars.githubusercontent.com/u/86841659?v=4"
                 title="Aryaveer 2.0"
                 subtitle="Welcome to my AI powered chatbot!"
             />
+
+       
         </section>
     );
 };

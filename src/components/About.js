@@ -12,7 +12,7 @@ const About = (props) => {
               avatar={
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
                   <Box component="span" className="iconify" data-icon="emojione:red-circle" sx={{ mr: 1 }} />
-                  <Box component="span" className="iconify" data-icon="twemoji:yellow-circle" sx={{ mr: 1 }} />
+                  <Box component="span" className="iconify" data-icon="twemoji:yellow-circle" sx={{ mr: 1}} />
                   <Box component="span" className="iconify" data-icon="twemoji:green-circle" />
                 </Box>
               }
