@@ -6,6 +6,20 @@ import fastapiSklearn from "../images/fastapi_sklearn.png"
 const blogConfig = [
     {
         id: "blog-1",
+        title: "Achieving a 1657% Speedup with Ray: Benchmarking Distributed Batch Processing for LLM Inference",
+        links: [
+            {
+                name: "article",
+                url: "https://medium.com/@krishnaaryaveer/achieving-a-1657-speedup-with-ray-benchmarking-distributed-batch-processing-for-llm-inference-b6a409792f2d",
+                icon: <SiMedium/>
+            }
+        ],
+        image: "https://docs.ray.io/en/latest/_images/batch_inference.png",
+        description: "In this article, I’ll walk you through how you can leverage Ray a powerful distributed computing framework — for batch processing, particularly for large language models (LLMs)",
+        target: "_blank"
+    },
+    {
+        id: "blog-2",
         title: "Leveraging Ray for Distributed Document Embedding!",
         links: [
             {
@@ -19,7 +33,7 @@ const blogConfig = [
         target: "_blank"
     },
     {
-        id: "blog-2",
+        id: "blog-3",
         title: "Self-Talking Portfolio!",
         links: [
             {
@@ -33,7 +47,7 @@ const blogConfig = [
         target: "_blank"
     },
     {
-        id: "blog-2",
+        id: "blog-4",
         title: "How enterprises generates summary so fast!",
         links: [
             {
@@ -47,7 +61,7 @@ const blogConfig = [
         target: "_blank"
     },
     {
-        id: "blog-3",
+        id: "blog-5",
         title: "Topic Discovery in LlmOps!",
         links: [
             {
