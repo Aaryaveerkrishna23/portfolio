@@ -15,13 +15,13 @@ const projectConfig = [
         links: [
             {
                 name: "repo",
-                url: "https://github.com/Aaryaveerkrishna23/charts2csv",
+                url: "https://github.com/Aaryaveerkrishna23/churn_prediction_chaid",
                 icon: <AiFillGithub/>
             }
             
         ],
         image: `https://private-user-images.githubusercontent.com/86841659/380450315-f16bc31e-6839-403c-b71d-e1727e9a5638.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk5NzQ3MDAsIm5iZiI6MTcyOTk3NDQwMCwicGF0aCI6Ii84Njg0MTY1OS8zODA0NTAzMTUtZjE2YmMzMWUtNjgzOS00MDNjLWI3MWQtZTE3MjdlOWE1NjM4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDI2VDIwMjY0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUzZWZmYjg2MGIyM2UwMDc4NTNlMTA4M2E2MjZhYzc4NzljNzJhZTYxYzNmODA3YmRlMDg2YzJmY2FkMThkYjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dlqxtV3ZDA5cVnEhCHYQZyJKi-USGRW_Y1xfyhWkvOw`,
-        description: "This project focuses on predicting churn for a telecom provider. Using CHAID for market segmentation and Google’s Gemini Flash LLM, we generate detailed insights and visualize CHAID in IBM's SPSS Software.",
+        description: "This project focuses on predicting churn for a telecom provider. Using CHAID and Google’s Gemini Flash LLM, we generate detailed insights and visualize CHAID in IBM's SPSS Software.",
         target: "_blank"
     },
     {
