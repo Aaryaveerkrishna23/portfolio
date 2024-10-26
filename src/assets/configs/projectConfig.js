@@ -20,7 +20,7 @@ const projectConfig = [
             }
             
         ],
-        image: `https://private-user-images.githubusercontent.com/86841659/380450315-f16bc31e-6839-403c-b71d-e1727e9a5638.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk5NzQ3MDAsIm5iZiI6MTcyOTk3NDQwMCwicGF0aCI6Ii84Njg0MTY1OS8zODA0NTAzMTUtZjE2YmMzMWUtNjgzOS00MDNjLWI3MWQtZTE3MjdlOWE1NjM4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDI2VDIwMjY0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUzZWZmYjg2MGIyM2UwMDc4NTNlMTA4M2E2MjZhYzc4NzljNzJhZTYxYzNmODA3YmRlMDg2YzJmY2FkMThkYjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dlqxtV3ZDA5cVnEhCHYQZyJKi-USGRW_Y1xfyhWkvOw`,
+        image: `https://www.google.com/imgres?q=decision%20tree%20for%20market%20segment&imgurl=https%3A%2F%2Fcopymate.app%2Fwp-content%2Fuploads%2F2024%2F02%2Fdrzewo-decyzyjne-narzedzie-wspomagajace-podejmowanie-decyzji-biznesowych-800x694.jpg&imgrefurl=https%3A%2F%2Fcopymate.app%2Fblog%2Fmulti%2Fdecision-tree-a-tool-supporting-business-decision-making%2F&docid=mn4bO-61-d-XLM&tbnid=Xniw1hbd6LMRwM&vet=12ahUKEwiW17yg86yJAxW1XmwGHXKvDsQQM3oECGcQAA..i&w=800&h=694&hcb=2&ved=2ahUKEwiW17yg86yJAxW1XmwGHXKvDsQQM3oECGcQAA`,
         description: "This project focuses on predicting churn for a telecom provider. Using CHAID and Google’s Gemini Flash LLM, we generate detailed insights and visualize CHAID in IBM's SPSS Software.",
         target: "_blank"
     },
