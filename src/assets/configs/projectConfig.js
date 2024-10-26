@@ -20,7 +20,7 @@ const projectConfig = [
             }
             
         ],
-        image: `https://www.google.com/imgres?q=decision%20tree%20for%20market%20segment&imgurl=https%3A%2F%2Fcopymate.app%2Fwp-content%2Fuploads%2F2024%2F02%2Fdrzewo-decyzyjne-narzedzie-wspomagajace-podejmowanie-decyzji-biznesowych-800x694.jpg&imgrefurl=https%3A%2F%2Fcopymate.app%2Fblog%2Fmulti%2Fdecision-tree-a-tool-supporting-business-decision-making%2F&docid=mn4bO-61-d-XLM&tbnid=Xniw1hbd6LMRwM&vet=12ahUKEwiW17yg86yJAxW1XmwGHXKvDsQQM3oECGcQAA..i&w=800&h=694&hcb=2&ved=2ahUKEwiW17yg86yJAxW1XmwGHXKvDsQQM3oECGcQAA`,
+        image: "https://www.google.com/imgres?q=market%20segmentation%20&imgurl=https%3A%2F%2Fentrepreneurhandbook.co.uk%2Fwp-content%2Fuploads%2F2015%2F08%2FSegmenting-a-market.jpg.webp&imgrefurl=https%3A%2F%2Fentrepreneurhandbook.co.uk%2Fwhy-market-segmentation-is-crucial-for-your-business%2F&docid=5oraGjIl8yX8kM&tbnid=wJ6k12IFe0h8BM&vet=12ahUKEwiv343h-6yJAxUA7jgGHZZwNXUQM3oECGYQAA..i&w=1000&h=560&hcb=2&ved=2ahUKEwiv343h-6yJAxUA7jgGHZZwNXUQM3oECGYQAA",
         description: "This project focuses on predicting churn for a telecom provider. Using CHAID and Google’s Gemini Flash LLM, we generate detailed insights and visualize CHAID in IBM's SPSS Software.",
         target: "_blank"
     },
