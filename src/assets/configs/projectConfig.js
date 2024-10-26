@@ -27,21 +27,6 @@ const projectConfig = [
     },
     {
         id: "project-2",
-        title: "Advanced-RAG",
-        links: [
-            {
-                name: "repo",
-                url: "https://github.com/Aaryaveerkrishna23/adaptive_rag",
-                icon: <AiFillGithub/>
-            }
-            
-        ],
-        image: portfolio,
-        description: "Enterprise level RAG consisting of prompt router for handling complex queries",
-        target: "_blank"
-    },
-    {
-        id: "project-2",
         title: "charts2csv",
         links: [
             {
