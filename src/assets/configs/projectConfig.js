@@ -5,6 +5,7 @@ import {ImBook} from "react-icons/im";
 import sklearnGenetic from "../images/sklearn_genetic_opt.png"
 import kafkaMl from "../images/kafkaml.png"
 import portfolio from "../images/rag_image.webp"
+import churn from "../images/churn-prediction-python.webp"
 
 import React from 'react'
 
@@ -20,7 +21,7 @@ const projectConfig = [
             }
             
         ],
-        image: "https://www.google.com/imgres?q=market%20segmentation%20&imgurl=https%3A%2F%2Fentrepreneurhandbook.co.uk%2Fwp-content%2Fuploads%2F2015%2F08%2FSegmenting-a-market.jpg.webp&imgrefurl=https%3A%2F%2Fentrepreneurhandbook.co.uk%2Fwhy-market-segmentation-is-crucial-for-your-business%2F&docid=5oraGjIl8yX8kM&tbnid=wJ6k12IFe0h8BM&vet=12ahUKEwiv343h-6yJAxUA7jgGHZZwNXUQM3oECGYQAA..i&w=1000&h=560&hcb=2&ved=2ahUKEwiv343h-6yJAxUA7jgGHZZwNXUQM3oECGYQAA",
+        image: churn,
         description: "This project focuses on predicting churn for a telecom provider. Using CHAID and Google’s Gemini Flash LLM, we generate detailed insights and visualize CHAID in IBM's SPSS Software.",
         target: "_blank"
     },
