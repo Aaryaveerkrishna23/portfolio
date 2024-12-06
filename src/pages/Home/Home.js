@@ -132,7 +132,7 @@ const Home = () => {
                             <Button 
                                variant="contained" 
                                color="primary"
-                               href="https://github.com/Aaryaveerkrishna23/portfolio/raw/main/public/resume.pdf" 
+                               href="https://thumbs.dreamstime.com/z/creative-design-come-back-later-message-come-back-later-message-118578152.jpg" 
                                target="_blank"
                                download
                            >
