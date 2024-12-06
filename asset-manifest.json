@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e8333622.css",
-    "main.js": "/portfolio/static/js/main.d52f10fc.js",
+    "main.js": "/portfolio/static/js/main.f106776b.js",
     "static/media/rag_image.webp": "/portfolio/static/media/rag_image.055d888b399faa4eefba.webp",
     "static/media/sklearn_genetic_opt.png": "/portfolio/static/media/sklearn_genetic_opt.15b892adf6368a965618.png",
     "static/media/kafkaml.png": "/portfolio/static/media/kafkaml.5ee10c15934deddbebe6.png",
@@ -10,10 +10,10 @@
     "static/media/logo.png": "/portfolio/static/media/logo.1ad62897b3f1288de5ad.png",
     "index.html": "/portfolio/index.html",
     "main.e8333622.css.map": "/portfolio/static/css/main.e8333622.css.map",
-    "main.d52f10fc.js.map": "/portfolio/static/js/main.d52f10fc.js.map"
+    "main.f106776b.js.map": "/portfolio/static/js/main.f106776b.js.map"
   },
   "entrypoints": [
     "static/css/main.e8333622.css",
-    "static/js/main.d52f10fc.js"
+    "static/js/main.f106776b.js"
   ]
 }
